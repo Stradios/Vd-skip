@@ -24,3 +24,5 @@ Vd-skip - WoW Addon for Streamlined NPC Interactions
 ### ⚙️ Fully Configurable
 - Toggle each feature individually via slash commands:
 
+### Stradios from Nort Sun Guild on LORDAERON
+official Warmane Nort Sun Guild web www.nort-sun.oom
