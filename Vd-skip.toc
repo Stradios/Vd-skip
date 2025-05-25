@@ -1,0 +1,8 @@
+## Interface: 30300
+## Title: Vd-skip
+## Notes: Skips NPC dialogue and directly opens vendor/flight master interfaces
+## Author: Stradios
+## Version: 1.0
+## SavedVariables: VdSkipDB
+
+Vd-skip.lua
