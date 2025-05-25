@@ -39,7 +39,7 @@ Toggle each feature individually using slash commands:
 ---
 ![## No Vd-skip ](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/no-vd-skip.gif)
 
-![## With Vd-skip addon on]([https://your-domain.com/your-animation.webp](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/vd-skip-addon.gif))
+![## With Vd-skip addon on](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/vd-skip-addon.gif)
 
 
 ---
