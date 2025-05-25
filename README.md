@@ -35,5 +35,6 @@ Toggle each feature individually using slash commands:
 /vdskip debug      - Toggle debug output
 
 
+---
 ### Stradios from Nort Sun Guild on LORDAERON
 official Warmane Nort Sun Guild web www.nort-sun.oom
