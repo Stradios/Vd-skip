@@ -27,12 +27,6 @@ Inspired by modern WoW’s streamlined interface, Vd-skip brings quality-of-life
 Toggle each feature individually using slash commands:
 
 
-
-
----
-### Stradios from Nort Sun Guild on LORDAERON
-official Warmane Nort Sun Guild web www.nort-sun.oom
-
 ```plaintext
 /vdskip vendors    - Toggle vendor skipping
 /vdskip flight     - Toggle flight master skipping
@@ -40,3 +34,14 @@ official Warmane Nort Sun Guild web www.nort-sun.oom
 /vdskip quests     - Toggle empty quest dialogue skipping
 /vdskip            - Show current toggle status
 /vdskip debug      - Toggle debug output
+```
+
+---
+![## No Vd-skip ](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/no-vd-skip.gif)
+
+![## With Vd-skip addon on]([https://your-domain.com/your-animation.webp](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/vd-skip-addon.gif))
+
+
+---
+### Stradios from Nort Sun Guild on LORDAERON
+official Warmane Nort Sun Guild web www.nort-sun.oom
