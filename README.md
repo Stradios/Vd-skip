@@ -36,3 +36,5 @@ Use `/vdskip` followed by an option to toggle features:
 | `/vdskip`            | Show current status of all options |
 
 ### Example Output
+![](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/no-vd-skip.gif)
+![](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/vd-skip-addon.gif)
