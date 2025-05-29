@@ -1,49 +1,38 @@
-# Vd-skip - WoW 3.3.5a Dialogue Skipping Addon
+# Vd-skip – WoW 3.3.5a NPC Dialogue Skipping Addon
 
-**Streamline vendor, flight master, and trainer interactions — while preserving important quest dialogues.**
+**Vd-skip** is a lightweight addon for *World of Warcraft: Wrath of the Lich King (3.3.5a)* that streamlines NPC interactions by automatically skipping unnecessary dialogue with vendors and flight masters — but only when no quests are available or active.
 
-## 📝 Description
+Inspired by retail WoW’s modern conveniences, Vd-skip enhances your gameplay flow by:
 
-**Vd-skip** is a lightweight World of Warcraft (3.3.5a) addon that automatically skips unnecessary NPC dialogue interactions for vendors, flight masters, and profession trainers — while intelligently preserving quest interactions when they exist.
-
-Inspired by modern WoW’s streamlined interface, Vd-skip brings quality-of-life improvements to Wrath of the Lich King clients by:
-
-- Instantly opening vendor windows  
-- Immediately opening flight maps  
-- Directly showing profession trainer skills  
-- Preserving quest interactions when NPCs have quests available  
+- Instantly opening **vendor** windows if no quests are present
+- Immediately showing the **flight map** if the NPC has no quests
+- Automatically skipping **empty quest greetings**
+- Respecting quest availability — never skips when quests are offered or active
+- Providing **slash commands** to toggle features on the fly
 
 ---
 
 ## ✨ Features
 
 ### 🔁 Automatic Dialogue Skipping
-- **Vendors**: Bypasses “Browse goods” dialogue
-- **Flight Masters**: Skips “I need a ride” prompt
-- **Profession Trainers**: Jumps straight to skill training
-- **Smart Quest Detection**: Never skips if NPC has available/active quests
-
-### ⚙️ Customizable Behavior
-Toggle each feature individually using slash commands:
-
-
-```plaintext
-/vdskip vendors    - Toggle vendor skipping
-/vdskip flight     - Toggle flight master skipping
-/vdskip trainers   - Toggle trainer skipping
-/vdskip quests     - Toggle empty quest dialogue skipping
-/vdskip            - Show current toggle status
-/vdskip debug      - Toggle debug output
-```
+- **Vendors**: Auto-selects vendor window if the NPC has no quests
+- **Flight Masters**: Skips gossip and shows map if no quests exist
+- **Empty Quest Greetings**: Auto-closes when no quests are available or active
+- **Smart Quest Detection**: Won’t skip if the NPC has active or available quests
+- **Gossip Cleanup**: Closes redundant gossip frames after merchant/taxi opens
 
 ---
-## No Vd-skip
-![## No Vd-skip ](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/no-vd-skip.gif)
----
-## With Vd-skip addon on
-![## With Vd-skip addon on](https://raw.githubusercontent.com/Stradios/Vd-skip/refs/heads/main/vd-skip-addon.gif)
 
+## 🔧 Slash Commands
 
----
-### Stradios from Nort Sun Guild on LORDAERON
-official Warmane Nort Sun Guild web www.nort-sun.oom
+Use `/vdskip` followed by an option to toggle features:
+
+| Command              | Description                        |
+|----------------------|------------------------------------|
+| `/vdskip vendors`    | Toggle vendor window auto-opening  |
+| `/vdskip flight`     | Toggle automatic flight map opening |
+| `/vdskip quests`     | Toggle skipping of empty quest greetings |
+| `/vdskip debug`      | Toggle debug logging in chat       |
+| `/vdskip`            | Show current status of all options |
+
+### Example Output
