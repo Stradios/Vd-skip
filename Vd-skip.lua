@@ -49,26 +49,24 @@ frame:SetScript("OnEvent", function(self, event, ...)
 
     if event == "GOSSIP_SHOW" then
         DebugPrint("Gossip shown")
-        
-        -- Don't skip if NPC has quests
+
         if HasQuests() then
             DebugPrint("NPC has quests - not skipping")
             return
         end
 
-        -- Check gossip options
-        for i = 1, GetNumGossipOptions() do
-            local text, _, _, _, _, _, _, _, _ = GetGossipOptions()
-            if text then
-                DebugPrint("Found option:", text)
-                
-                if VdSkipDB.skipVendors and (text == "Browse" or text:find("browse")) then
-                    DebugPrint("Selecting vendor option")
-                    return SelectGossipOption(i)
-                elseif VdSkipDB.skipFlightMasters and (text == "I need a ride" or text:find("ride")) then
-                    DebugPrint("Selecting flight master option")
-                    return SelectGossipOption(i)
-                end
+        local options = { GetGossipOptions() }
+        for i = 1, #options, 2 do
+            local text = options[i]
+            local type = options[i + 1]
+            DebugPrint("Option:", text, "Type:", type)
+
+            if VdSkipDB.skipFlightMasters and type == "taxi" then
+                DebugPrint("Selecting flight master option")
+                return SelectGossipOption((i + 1) / 2)
+            elseif VdSkipDB.skipVendors and type == "vendor" then
+                DebugPrint("Selecting vendor option")
+                return SelectGossipOption((i + 1) / 2)
             end
         end
 
@@ -91,7 +89,7 @@ frame:RegisterEvent("ADDON_LOADED")
 SLASH_VDSKIP1 = "/vdskip"
 SlashCmdList["VDSKIP"] = function(input)
     input = input and strlower(strtrim(input)) or ""
-    
+
     if input == "vendors" then
         VdSkipDB.skipVendors = not VdSkipDB.skipVendors
         print(format("Vd-skip: Vendor skipping %s", VdSkipDB.skipVendors and "|cff00ff00enabled|r" or "|cffff0000disabled|r"))
